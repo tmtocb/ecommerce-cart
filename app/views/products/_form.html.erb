@@ -1,0 +1,8 @@
+<%= simple_form_for @product do |f| %>
+  <%= f.error_notification %>
+  <div class="form-group">
+    <%= f.input :title, label: 'Title', class: "form-control" %>
+    <%= f.input :price, label: 'Price', class: "form-control" %>
+    <%= f.button :submit, class: "btn btn-primary" %>
+  </div>
+<% end %>
